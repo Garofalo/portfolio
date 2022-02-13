@@ -55,7 +55,7 @@ export default function Home(){
             <h1>Projects</h1>
             <div className='proj-card-holder'>
             <Card style={{width: '15rem'}}>
-                <Card.Img variant= "top" src={mam} style={{width: '35vw'}}/>
+                <Card.Img variant= "top" src={mam} style={{width: '30vw'}}/>
                 <Card.Body>
                     <Card.Title>
                         Mamoo
