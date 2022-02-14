@@ -13,7 +13,10 @@ export default function Home(){
         <div className="about">
 
         </div>
+        
         <div className="skills">
+        <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Developer Toolbox</h1>
+
             <div className="skill-holder">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
             </div>
@@ -52,12 +55,12 @@ export default function Home(){
             </div>
         </div>
         <div className="projects">
-            <h1>Projects</h1>
+            <h1 style={{borderBottom: '2px solid black', marginTop: '5vh'}}>Projects</h1>
             <div className='proj-card-holder'>
-            <Card style={{width: '15rem'}}>
-                <Card.Img variant= "top" src={mam} style={{width: '30vw'}}/>
+            <Card style={{width: '20rem'}}>
+                <Card.Img variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
                 <Card.Body>
-                    <Card.Title>
+                    <Card.Title >
                         Mamoo
                     </Card.Title>
                     <Card.Text>
@@ -67,8 +70,8 @@ export default function Home(){
             </Card>
             </div>
             <div className='proj-card-holder'>
-            <Card style={{width: '15rem'}}>
-                <Card.Img variant= "top" src={randq} style={{width: '30vw'}}/>
+            <Card style={{width: '20rem'}}>
+                <Card.Img variant= "top" src={randq} style={{width: '30vw', margin: '0 auto'}}/>
                 <Card.Body>
                     <Card.Title>
                         Random Quest
@@ -80,8 +83,8 @@ export default function Home(){
             </Card>
             </div>
             <div className='proj-card-holder'>
-            <Card style={{width: '15rem'}}>
-                <Card.Img variant= "top" src={restLogo} style={{width: '30vw'}}/>
+            <Card style={{width: '20rem'}}>
+                <Card.Img variant= "top" src={restLogo} style={{width: '30vw', margin: '0 auto'}}/>
                 <Card.Body>
                     <Card.Title>
                         RESTful API
