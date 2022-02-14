@@ -1,6 +1,6 @@
 import {Routes, Route} from "react-router-dom"
-import Home from "./components/Home/Home";
-import ProjDetail from "./components/ProjDetail/ProjDetail";
+import Home from "./screens/Home/Home";
+
 import Head from "./components/Head/Head";
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
       < Head/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/:id" element={<ProjDetail/>}/> 
       </Routes>
 
     </div>

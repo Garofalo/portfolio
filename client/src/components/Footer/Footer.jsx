@@ -12,10 +12,10 @@ export default function Footer(){
              flexBasis: '92vw'}}>Contact</h1>
              <div className='contact-info'>
              <div className='a-contact'>
-                    <a href='https://github.com/Garofalo?tab=repositories' target='_blank'><button >Public Github Repositories</button></a>
+                    <a href='https://github.com/Garofalo?tab=repositories' target='_blank'><h4 >Public Github Repositories</h4></a>
                 </div>
                 <div className='a-contact'>
-                    <a href='https://www.linkedin.com/in/ron-garo/' target='_blank'><button >Message me on Linked In</button></a>
+                    <a href='https://www.linkedin.com/in/ron-garo/' target='_blank'><h4 >Message me on Linked In</h4></a>
                 </div>
              </div>
     </footer>

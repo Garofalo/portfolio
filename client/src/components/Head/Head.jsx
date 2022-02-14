@@ -10,6 +10,7 @@ export default function Head(){
     const variant = darkMode ? "dark" : "light"
     const buttonWord = darkMode ? "Light" : "Dark"
     const navDark = darkMode ? "dark-bg" : "light-bg"
+    
     return(
     <header>
 
@@ -20,25 +21,26 @@ export default function Head(){
                 <Nav.Link href="#projects">Projects</Nav.Link>                
                 <Nav.Link href="#contact">Contact</Nav.Link>            
             </Nav>
-
-        </Navbar>
-        <div className="header-bottom">
-            <h4>Ron Garofalo || Full Stack Engineer</h4>
             <div>
                 <ThemeContext.Consumer>
                 {
                     ({changeTheme})=>(
-                        <button onClick={()=>{
+                        <Nav.Link onClick={()=>{
                             setDarkMode(!darkMode);
                             changeTheme(
                                 darkMode ? themes.light : themes.dark)
                         }}>
                             {buttonWord}
-                        </button>
+                        </Nav.Link>
                     )
                 }
                 </ThemeContext.Consumer>
             </div>
-            </div>
-    </header>)
+
+        </Navbar>
+        <div className="header-bottom">
+            <h4>Ron Garofalo || Full Stack Engineer</h4>
+        </div>
+    </header>
+    )
 }
