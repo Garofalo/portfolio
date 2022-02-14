@@ -7,14 +7,14 @@ import restLogo from '../../utils/rest.png'
 export default function Home(){
     return (
     <div>
-        <header>
-            <h4>Ron Garofalo || Full Stack Engineer</h4>
-        </header>
-        <div className="about">
+        <div className='bumper-div'  id="about"></div>
+        <div className='bumper-div'  ></div>
+        <div className="about container-home">
+        <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Who is Ron?</h1>
 
         </div>
-        
-        <div className="skills">
+        <div className='bumper-div' id="skills"></div>
+        <div className="skills container-home">
         <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Developer Toolbox</h1>
 
             <div className="skill-holder">
@@ -54,16 +54,17 @@ export default function Home(){
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
             </div>
         </div>
-        <div className="projects">
+        <div className='bumper-div' id="projects"></div>
+        <div className="projects container-home" >
             <h1 style={{borderBottom: '2px solid black', marginTop: '5vh'}}>Projects</h1>
             <div className='proj-card-holder'>
             <Card style={{width: '20rem'}}>
                 <Card.Img variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
-                <Card.Body>
+                <Card.Body id="proj1">
                     <Card.Title >
                         Mamoo
                     </Card.Title>
-                    <Card.Text>
+                    <Card.Text >
                         A Full Stack Application that authenticated users can use to mark important events in their lives.
                     </Card.Text>
                 </Card.Body>
@@ -72,7 +73,7 @@ export default function Home(){
             <div className='proj-card-holder'>
             <Card style={{width: '20rem'}}>
                 <Card.Img variant= "top" src={randq} style={{width: '30vw', margin: '0 auto'}}/>
-                <Card.Body>
+                <Card.Body id="proj2">
                     <Card.Title>
                         Random Quest
                     </Card.Title>
@@ -85,7 +86,7 @@ export default function Home(){
             <div className='proj-card-holder'>
             <Card style={{width: '20rem'}}>
                 <Card.Img variant= "top" src={restLogo} style={{width: '30vw', margin: '0 auto'}}/>
-                <Card.Body>
+                <Card.Body id="proj3">
                     <Card.Title>
                         RESTful API
                     </Card.Title>

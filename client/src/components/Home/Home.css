@@ -24,6 +24,10 @@
 .projects>*{
     margin: 2%;
 }
-#id{
-    width: 200%;
+.bumper-div{
+    margin-bottom: 5vh;
+}
+.about{
+    display: flex;
+    justify-content: center;
 }

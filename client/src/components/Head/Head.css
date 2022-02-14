@@ -1,0 +1,14 @@
+.header-bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15%;
+    flex-direction: column;
+}
+.light-bg{
+    background: white;
+
+}
+.dark-bg{
+    background: #282c34;
+
+}
