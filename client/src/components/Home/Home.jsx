@@ -110,7 +110,13 @@ export default function Home(){
                 }
                 </Card.Body>
                 <div>
-                <button className="show-more-button" onClick={()=>setShowMore({...showMore, proj1: !showMore.proj1})}>Show More</button>
+                    {
+                        showMore.proj1 === false ? 
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj1: !showMore.proj1})}>Show More</h4>
+                        :
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj1: !showMore.proj1})}>Show Less</h4>
+
+                    }                
                 </div>
             </Card>
             </div>
@@ -148,7 +154,13 @@ export default function Home(){
                 }
                 </Card.Body>
                 <div>
-                <button className="show-more-button" onClick={()=>setShowMore({...showMore, proj2: !showMore.proj2})}>Show More</button>
+                    {
+                        showMore.proj2 === false ? 
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj2: !showMore.proj2})}>Show More</h4>
+                        :
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj2: !showMore.proj2})}>Show Less</h4>
+
+                    }                
                 </div>
             </Card>
             </div>
@@ -185,7 +197,13 @@ export default function Home(){
                 }
                 </Card.Body>
                 <div>
-                <button className="show-more-button" onClick={()=>setShowMore({...showMore, proj3: !showMore.proj3})}>Show More</button>
+                    {
+                        showMore.proj3 === false ? 
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj3: !showMore.proj3})}>Show More</h4>
+                        :
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj3: !showMore.proj3})}>Show Less</h4>
+
+                    }
                 </div>
             </Card>
             </div>

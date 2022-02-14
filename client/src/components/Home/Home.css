@@ -45,7 +45,9 @@
 
 .show-more-button{
     background: none;
-    border: none
+    border: none;
+    padding: 0px;
+    cursor: pointer;
 }
 .icon-holder{
     width: 10vw;
