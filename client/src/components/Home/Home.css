@@ -35,3 +35,29 @@
     background: white;
     border-radius: 10%;
 }
+#proj1, #proj2, #proj3{
+    width: 20rem;
+}
+.link-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+.show-more-button{
+    background: none;
+    border: none
+}
+.icon-holder{
+    width: 10vw;
+}
+
+.proj-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.proj-icons>*{
+    margin: 2%;
+}
+.margin-3{
+    margin: 3%;
+}
