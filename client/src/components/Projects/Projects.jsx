@@ -158,7 +158,7 @@ export default function Projects(){
             </div>
             <div className='proj-card-holder'>
             <Card id="proj4">
-                <Card.Img variant= "top" src={yourCraft} style={{width: '40vw', margin: '0 auto'}}/>
+                <Card.Img variant= "top" src={yourCraft} style={{width: '40vw', margin: '0 auto', marginTop: '2%'}}/>
                 <Card.Body >
                     <Card.Title>
                         YourCraft
