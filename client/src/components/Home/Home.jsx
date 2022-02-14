@@ -3,7 +3,7 @@ import  Card  from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import mam from '../../utils/mam.png'
 import randq from '../../utils/randq.png'
-import restLogo from '../../utils/rest.png'
+import restLogo from '../../utils/save.jpg'
 import Footer from '../Footer/Footer';
 import { useState } from 'react';
 
@@ -154,7 +154,7 @@ export default function Home(){
             </div>
             <div className='proj-card-holder'>
             <Card id="proj3">
-                <Card.Img variant= "top" src={restLogo} style={{width: '30vw', margin: '0 auto'}}/>
+                <Card.Img variant= "top" src={restLogo} style={{width: '40vw', margin: '0 auto'}}/>
                 <Card.Body >
                     <Card.Title>
                         RESTful API
