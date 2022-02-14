@@ -4,7 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import mam from '../../utils/mam.png'
 import randq from '../../utils/randq.png'
 import restLogo from '../../utils/rest.png'
+import Footer from '../Footer/Footer';
+
 export default function Home(){
+
     return (
     <div>
         <div className='bumper-div'  id="about"></div>
@@ -23,10 +26,10 @@ export default function Home(){
             <div className="skill-holder">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
             </div>            
-            <div className="skill-holder">
+            <div className="skill-holder white-bg">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
             </div>
-            <div className="skill-holder">
+            <div className="skill-holder white-bg">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
             </div>
             <div className="skill-holder">
@@ -35,16 +38,16 @@ export default function Home(){
             <div className="skill-holder">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
             </div>
-            <div className="skill-holder">
+            <div className="skill-holder white-bg">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
             </div>
             <div className="skill-holder">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
             </div>
-            <div className="skill-holder">
+            <div className="skill-holder white-bg">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
             </div>
-            <div className="skill-holder">
+            <div className="skill-holder white-bg">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
             </div>
             <div className="skill-holder">
@@ -59,7 +62,7 @@ export default function Home(){
             <h1 style={{borderBottom: '2px solid black', marginTop: '5vh'}}>Projects</h1>
             <div className='proj-card-holder'>
             <Card style={{width: '20rem'}}>
-                <Card.Img variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
+                <Card.Img  variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
                 <Card.Body id="proj1">
                     <Card.Title >
                         Mamoo
@@ -98,8 +101,6 @@ export default function Home(){
             </div>
 
         </div>
-        <footer>
-
-        </footer>
+<Footer/>
     </div>)
 }
