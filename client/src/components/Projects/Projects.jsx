@@ -166,7 +166,7 @@ export default function Projects(){
                             My latest Portfolio 
                         </Card.Text>
 
-                        <Card.Text>Deployed: Yes</Card.Text>
+                        <Card.Text>Deployed: Hopefully</Card.Text>
                         <div className='proj-icons'>
                             <div className="icon-holder">
                                 <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
