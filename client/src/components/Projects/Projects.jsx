@@ -11,6 +11,9 @@ import './Projects.css'
 export default function Projects(){
 
     return(
+        <div id="projects">
+        <h1  style={{borderBottom: '2px solid black', width: '93vw', margin: '0 auto'}}>Projects</h1>
+
         <div className="projects container-home">
             <div className='proj-card-holder'>
                 <Card id="proj1"  >
@@ -177,6 +180,7 @@ export default function Projects(){
                         </div>
                     </Card.Body>
                 </Card>
+            </div>
             </div>
         </div>
     )

@@ -14,6 +14,9 @@ div#proj1, div#proj2, div#proj3,div#proj4, div#proj5 {
     display: flex;
     flex-direction: column;
 }
+#projects{
+    padding-top: 8vh;
+}
 .projects>*{
     margin: 2%;
 }
