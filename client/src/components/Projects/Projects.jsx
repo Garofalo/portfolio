@@ -11,7 +11,7 @@ import './Projects.css'
 export default function Projects(){
 
     return(
-        <div className="projects container-home" id="projects" >
+        <div className="projects container-home">
             <div className='proj-card-holder'>
                 <Card id="proj1"  >
                     <Card.Img  alt="mamoo" variant= "top" className="proj-img" src={mam} />
