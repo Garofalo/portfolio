@@ -6,20 +6,22 @@ import  Card  from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../screens/Home/Home.css'
 import { useState } from 'react';
+import logo from '../../utils/logo180.png'
 
 export default function Projects(){
     const [showMore, setShowMore] = useState({
         proj1 : false,
         proj2 : false,
         proj3: false, 
-        proj4: false
+        proj4: false, 
+        proj5: false
     })
     return(
         <div className="projects container-home" >
             <h1 style={{borderBottom: '2px solid black', marginTop: '5vh'}}>Projects</h1>
             <div className='proj-card-holder'>
             <Card id="proj1"  >
-                <Card.Img  variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
+                <Card.Img  alt="mamoo" variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
                 <Card.Body >
                     <Card.Title >
                         Mamoo
@@ -35,19 +37,19 @@ export default function Projects(){
                     <div className='proj-icons'>
 
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                         </div>
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                            <img alt="react logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                         </div>
                         <div className="icon-holder">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                        <img alt="python logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
                         </div>
                         <div className="icon-holder">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+                        <img alt="django logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
                         </div>
                         <div className="icon-holder">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                        <img alt="postgresql logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
                         </div>
                     </div>
                     <div className='link-holder'>
@@ -71,7 +73,7 @@ export default function Projects(){
             </div>
             <div className='proj-card-holder'>
             <Card id="proj2" >
-                <Card.Img variant= "top" src={randq} style={{width: '30vw', margin: '0 auto'}}/>
+                <Card.Img alt="random quest" variant= "top" src={randq} style={{width: '30vw', margin: '0 auto'}}/>
                 <Card.Body >
                     <Card.Title>
                         Random Quest
@@ -85,13 +87,13 @@ export default function Projects(){
                     <div className='proj-icons'>
 
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                         </div>
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                            <img alt="react logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                         </div>
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                            <img alt="node js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
                         </div>
 
                     </div>
@@ -115,7 +117,7 @@ export default function Projects(){
             </div>
             <div className='proj-card-holder'>
             <Card id="proj3">
-                <Card.Img variant= "top" src={restLogo} style={{width: '40vw', margin: '0 auto'}}/>
+                <Card.Img alt="restful flask api" variant= "top" src={restLogo} style={{width: '40vw', margin: '0 auto'}}/>
                 <Card.Body >
                     <Card.Title>
                         RESTful API
@@ -129,13 +131,13 @@ export default function Projects(){
                     <div className='proj-icons'>
 
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                            <img alt="python logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
                         </div>
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+                            <img alt="flask logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
                         </div>
                         <div className="icon-holder">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                            <img alt="node js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
                         </div>
 
                     </div>
@@ -158,7 +160,7 @@ export default function Projects(){
             </div>
             <div className='proj-card-holder'>
             <Card id="proj4">
-                <Card.Img variant= "top" src={yourCraft} style={{width: '40vw', margin: '0 auto', marginTop: '2%'}}/>
+                <Card.Img alt="yourcraft" variant= "top" src={yourCraft} style={{width: '40vw', margin: '0 auto', marginTop: '2%'}}/>
                 <Card.Body >
                     <Card.Title>
                         YourCraft
@@ -172,13 +174,13 @@ export default function Projects(){
                     <div className='proj-icons'>
 
                         <div className="icon-holder">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                         </div>
                         <div className="icon-holder">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+                        <img alt="express logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
                         </div>
                         <div className="icon-holder">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                        <img alt="react logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                         </div>
 
                     </div>
@@ -197,6 +199,46 @@ export default function Projects(){
                         <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj4: !showMore.proj4})}>Show More</h4>
                         :
                         <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj4: !showMore.proj4})}>Show Less</h4>
+
+                    }
+                </div>
+            </Card>
+            </div>
+            <div className='proj-card-holder'>
+            <Card id="proj5">
+                <Card.Img alt="ron" variant= "top" src={logo} style={{width: '40vw', margin: '0 auto', marginTop: '2%'}}/>
+                <Card.Body >
+                    <Card.Title>
+                        This Site
+                    </Card.Title>
+                    <Card.Text>
+                        My latest Portfolio 
+                    </Card.Text>
+                    {
+                    showMore.proj5 === true && <>
+                    <Card.Text>Deployed: Yes</Card.Text>
+                    <div className='proj-icons'>
+
+                        <div className="icon-holder">
+                        <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        </div>
+                        <div className="icon-holder">
+                        <img alt="react logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                        </div>
+                    </div>
+
+                    <div className='link-holder'>
+                        <Card.Link href="https://github.com/Garofalo/portfolio" target="_blank">GitHub Repository</Card.Link>
+                    </div>
+                    </>
+                }
+                </Card.Body>
+                <div>
+                    {
+                        showMore.proj5 === false ? 
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj5: !showMore.proj5})}>Show More</h4>
+                        :
+                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj5: !showMore.proj5})}>Show Less</h4>
 
                     }
                 </div>

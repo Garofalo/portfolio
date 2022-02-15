@@ -35,8 +35,10 @@
     background: white;
     border-radius: 10%;
 }
-#proj1, #proj2, #proj3, #proj4{
+#proj1, #proj2, #proj3, #proj4, #proj5{
     width: 20rem;
+    color: #282c34;
+
 }
 .link-holder{
     display: flex;
