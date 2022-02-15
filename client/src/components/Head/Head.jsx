@@ -36,7 +36,9 @@ export default function Head(){
                 }
                 </ThemeContext.Consumer>
             </div>
-
+            {/* <div className="header-bottom">
+            <h4>Ron Garofalo || Full Stack Engineer</h4>
+            </div> */}
         </Navbar>
         <div className="header-bottom">
             <h4>Ron Garofalo || Full Stack Engineer</h4>

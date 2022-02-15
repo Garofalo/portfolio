@@ -1,27 +1,21 @@
-import mam from '../../utils/mam.png'
-import randq from '../../utils/randq.png'
+import mam from '../../utils/mamproj.svg'
+import randq from '../../utils/randproj.svg'
 import restLogo from '../../utils/save.jpg'
 import yourCraft from '../../utils/yourcraft.svg'
 import  Card  from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../screens/Home/Home.css'
-import { useState } from 'react';
-import logo from '../../utils/logo180.png'
+import logo from '../../utils/ronproj.svg'
+import './Projects.css'
 
 export default function Projects(){
-    const [showMore, setShowMore] = useState({
-        proj1 : false,
-        proj2 : false,
-        proj3: false, 
-        proj4: false, 
-        proj5: false
-    })
+
     return(
-        <div className="projects container-home" >
-            <h1 style={{borderBottom: '2px solid black', marginTop: '5vh'}}>Projects</h1>
+        <div className="projects container-home" id="projects" >
+
             <div className='proj-card-holder'>
             <Card id="proj1"  >
-                <Card.Img  alt="mamoo" variant= "top" src={mam} style={{width: '30vw' , margin: '0 auto'}}/>
+                <Card.Img  alt="mamoo" variant= "top" className="proj-img" src={mam} />
                 <Card.Body >
                     <Card.Title >
                         Mamoo
@@ -30,9 +24,6 @@ export default function Projects(){
                         A Full Stack Application that allows authenticated users to mark important events in their lives and quantify time passed.
                     </Card.Text>
 
-                
-                {
-                    showMore.proj1 === true && <>
                     <Card.Text>Deployed: Yes</Card.Text>
                     <div className='proj-icons'>
 
@@ -57,23 +48,14 @@ export default function Projects(){
                     <Card.Link href="https://github.com/Garofalo/mamoo" target="_blank">Front End Repository</Card.Link>
                     <Card.Link href="https://github.com/Garofalo/mamoobackend" target="_blank">Back End Repository</Card.Link>
                     </div>
-                    </>
-                }
-                </Card.Body>
-                <div>
-                    {
-                        showMore.proj1 === false ? 
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj1: !showMore.proj1})}>Show More</h4>
-                        :
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj1: !showMore.proj1})}>Show Less</h4>
 
-                    }                
-                </div>
+                </Card.Body>
+
             </Card>
             </div>
             <div className='proj-card-holder'>
             <Card id="proj2" >
-                <Card.Img alt="random quest" variant= "top" src={randq} style={{width: '30vw', margin: '0 auto'}}/>
+                <Card.Img alt="random quest" className="proj-img" variant= "top" src={randq} />
                 <Card.Body >
                     <Card.Title>
                         Random Quest
@@ -81,8 +63,7 @@ export default function Projects(){
                     <Card.Text>
                         A game built using React.js where users generate random enemies, attacks and outcomes.
                     </Card.Text>
-                    {
-                    showMore.proj2 === true && <>
+
                     <Card.Text>Deployed: Yes</Card.Text>
                     <div className='proj-icons'>
 
@@ -101,23 +82,14 @@ export default function Projects(){
                     <Card.Link href="https://randomquest.netlify.app/" target="_blank">Deployed Site</Card.Link>
                     <Card.Link href="https://github.com/Garofalo/random-quest" target="_blank">GitHub Repository</Card.Link>
                     </div>
-                    </>
-                }
-                </Card.Body>
-                <div>
-                    {
-                        showMore.proj2 === false ? 
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj2: !showMore.proj2})}>Show More</h4>
-                        :
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj2: !showMore.proj2})}>Show Less</h4>
 
-                    }                
-                </div>
+                </Card.Body>
+
             </Card>
             </div>
             <div className='proj-card-holder'>
             <Card id="proj3">
-                <Card.Img alt="restful flask api" variant= "top" src={restLogo} style={{width: '40vw', margin: '0 auto'}}/>
+                <Card.Img alt="restful flask api" className="proj-img" variant= "top" src={restLogo} />
                 <Card.Body >
                     <Card.Title>
                         RESTful API
@@ -125,8 +97,7 @@ export default function Projects(){
                     <Card.Text>
                         A demonstration of a self-built RESTful API and appropriate documentation.
                     </Card.Text>
-                    {
-                    showMore.proj3 === true && <>
+
                     <Card.Text>Deployed: No</Card.Text>
                     <div className='proj-icons'>
 
@@ -144,23 +115,14 @@ export default function Projects(){
                     <div className='link-holder'>
                         <Card.Link href="https://github.com/Garofalo/random-quest" target="_blank">GitHub Repository</Card.Link>
                     </div>
-                    </>
-                }
-                </Card.Body>
-                <div>
-                    {
-                        showMore.proj3 === false ? 
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj3: !showMore.proj3})}>Show More</h4>
-                        :
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj3: !showMore.proj3})}>Show Less</h4>
 
-                    }
-                </div>
+                </Card.Body>
+
             </Card>
             </div>
             <div className='proj-card-holder'>
             <Card id="proj4">
-                <Card.Img alt="yourcraft" variant= "top" src={yourCraft} style={{width: '40vw', margin: '0 auto', marginTop: '2%'}}/>
+                <Card.Img alt="yourcraft" className="proj-img" variant= "top" src={yourCraft} />
                 <Card.Body >
                     <Card.Title>
                         YourCraft
@@ -168,8 +130,7 @@ export default function Projects(){
                     <Card.Text>
                         A full stack inventory application built with a team that allows all users to see what craft brewers have in stock, and allows authenticated users to create, update and delete beverages. 
                     </Card.Text>
-                    {
-                    showMore.proj4 === true && <>
+
                     <Card.Text>Deployed: Yes</Card.Text>
                     <div className='proj-icons'>
 
@@ -190,23 +151,12 @@ export default function Projects(){
                     <div className='link-holder'>
                         <Card.Link href="https://github.com/kimcapgab/your-craft" target="_blank">GitHub Repository</Card.Link>
                     </div>
-                    </>
-                }
                 </Card.Body>
-                <div>
-                    {
-                        showMore.proj4 === false ? 
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj4: !showMore.proj4})}>Show More</h4>
-                        :
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj4: !showMore.proj4})}>Show Less</h4>
-
-                    }
-                </div>
             </Card>
             </div>
             <div className='proj-card-holder'>
             <Card id="proj5">
-                <Card.Img alt="ron" variant= "top" src={logo} style={{width: '40vw', margin: '0 auto', marginTop: '2%'}}/>
+                <Card.Img alt="ron" variant= "top" className="proj-img" src={logo} />
                 <Card.Body >
                     <Card.Title>
                         This Site
@@ -214,8 +164,7 @@ export default function Projects(){
                     <Card.Text>
                         My latest Portfolio 
                     </Card.Text>
-                    {
-                    showMore.proj5 === true && <>
+
                     <Card.Text>Deployed: Yes</Card.Text>
                     <div className='proj-icons'>
 
@@ -230,18 +179,9 @@ export default function Projects(){
                     <div className='link-holder'>
                         <Card.Link href="https://github.com/Garofalo/portfolio" target="_blank">GitHub Repository</Card.Link>
                     </div>
-                    </>
-                }
-                </Card.Body>
-                <div>
-                    {
-                        showMore.proj5 === false ? 
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj5: !showMore.proj5})}>Show More</h4>
-                        :
-                        <h4 className="show-more-button" onClick={()=>setShowMore({...showMore, proj5: !showMore.proj5})}>Show Less</h4>
 
-                    }
-                </div>
+                </Card.Body>
+
             </Card>
             </div>
 

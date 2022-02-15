@@ -8,16 +8,16 @@ export default function Home(){
 
 
     return (
-    <div>
-        <div className='bumper-div'  id="about"></div>
-        <div className='bumper-div'  ></div>
-        <div className="about container-home">
-        <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Who is Ron?</h1>
+    <div className='column-div'>
+        
+
+        <div className="about container-home" id="about">
+            <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Who is Ron?</h1>
 
         </div>
-        <div className='bumper-div' id="skills"></div>
-        <div className="skills container-home">
-        <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Developer Toolbox</h1>
+
+        <div className="skills container-home" id="skills">
+            <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Developer Toolbox</h1>
 
             <div className="skill-holder">
                 <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -56,8 +56,10 @@ export default function Home(){
                 <img alt="material ui logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
             </div>
         </div>
-        <div className='bumper-div' id="projects"></div>
+        <h1 style={{borderBottom: '2px solid black', width: '93vw', margin: '0 auto'}}>Projects</h1>
+
         <Projects/>
+        
     <Footer/>
-    </div>)
+</div>)
 }

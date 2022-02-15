@@ -1,0 +1,42 @@
+.proj-img{
+    width: 19rem ; 
+    margin: 0 auto;
+}
+div#proj1, div#proj2, div#proj3,div#proj4, div#proj5 {
+    width: 20rem;
+    color: #282c34;
+}
+.proj-card-holder{
+    display: flex;
+    justify-content: center;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+.projects>*{
+    margin: 2%;
+}
+.proj-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.proj-icons>*{
+    margin: 2%;
+}
+
+@media (min-width: 750px){
+    .projects{
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div#proj1, div#proj2, div#proj3,div#proj4, div#proj5 {
+        width: 18rem;
+
+    }
+    .proj-img{
+        width: 17rem ; 
+
+    }
+}
