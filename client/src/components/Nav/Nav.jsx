@@ -2,9 +2,9 @@ import { ThemeContext, themes } from "../../context/ThemeContext"
 import { useState } from "react"
 import '../../App.css'
 import { Nav, Navbar } from "react-bootstrap"
-import './Head.css'
+import './Nav.css'
 
-export default function Head(){
+export default function NavBar(){
 
     const [darkMode, setDarkMode] = useState(false)
     const variant = darkMode ? "dark" : "light"
@@ -36,13 +36,11 @@ export default function Head(){
                 }
                 </ThemeContext.Consumer>
             </div>
-            {/* <div className="header-bottom">
-            <h4>Ron Garofalo || Full Stack Engineer</h4>
-            </div> */}
+            <div className="header-bottom">
+                <h4>Ron Garofalo || Full Stack Engineer</h4>
+            </div>
         </Navbar>
-        <div className="header-bottom">
-            <h4>Ron Garofalo || Full Stack Engineer</h4>
-        </div>
+
     </header>
     )
 }

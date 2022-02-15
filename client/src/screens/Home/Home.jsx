@@ -4,16 +4,13 @@ import Projects from '../../components/Projects/Projects';
 
 export default function Home(){
 
-    
-
-
     return (
     <div className='column-div'>
         
 
         <div className="about container-home" id="about">
             <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', flexBasis: '92vw'}}>Who is Ron?</h1>
-
+            
         </div>
 
         <div className="skills container-home" id="skills">
@@ -58,8 +55,8 @@ export default function Home(){
         </div>
         <h1 style={{borderBottom: '2px solid black', width: '93vw', margin: '0 auto'}}>Projects</h1>
 
-        <Projects/>
+        <Projects />
         
-    <Footer/>
+    <Footer />
 </div>)
 }
