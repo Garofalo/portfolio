@@ -109,9 +109,7 @@ export default function Projects(){
                             <div className="icon-holder">
                                 <img alt="flask logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
                             </div>
-                            <div className="icon-holder">
-                                <img alt="node js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-                            </div>
+
 
                         </div>
                         <div className='link-holder'>
