@@ -6,6 +6,7 @@ import  Card  from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../screens/Home/Home.css'
 import logo from '../../utils/ronproj.svg'
+import djangologo from '../../utils/rest.png'
 import './Projects.css'
 
 export default function Projects(){
@@ -38,9 +39,7 @@ export default function Projects(){
                             <div className="icon-holder">
                                 <img alt="python logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
                             </div>
-                            <div className="icon-holder">
-                                <img alt="django logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
-                            </div>
+
                             <div className="icon-holder">
                                 <img alt="postgresql logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
                             </div>

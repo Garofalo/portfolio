@@ -1,7 +1,7 @@
 import './Home.css'
 import Footer from '../../components/Footer/Footer';
 import Projects from '../../components/Projects/Projects';
-
+import logo from '../../utils/rest.png'
 
 export default function Home(){
 
@@ -48,7 +48,7 @@ export default function Home(){
                 <img alt="python logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
             </div>
             <div className="skill-holder">
-                <img alt="django logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+                <img alt="django logo" src={logo} />
             </div>
             <div className="skill-holder white-bg">
                 <img alt="flask logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
