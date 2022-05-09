@@ -29,6 +29,10 @@ export default function Home(){
 
         </div>
 
+        <Projects />
+
+
+
         <div className="skills container-home" id="skills">
             <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', width: '92vw'}}>Developer Toolbox</h1>
 
@@ -70,7 +74,7 @@ export default function Home(){
             </div>
         </div>
 
-        <Projects />
+
         
     <Footer />
 </div>)

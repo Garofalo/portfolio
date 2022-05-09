@@ -6,7 +6,6 @@ import  Card  from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../screens/Home/Home.css'
 import logo from '../../utils/ronproj.svg'
-import djangologo from '../../utils/rest.png'
 import './Projects.css'
 
 export default function Projects(){
