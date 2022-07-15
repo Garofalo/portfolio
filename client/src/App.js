@@ -1,6 +1,6 @@
 import Home from "./screens/Home/Home";
 import NavBar from "./components/Nav/Nav";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ReactGA from "react-ga"
 function App() {
    
@@ -11,12 +11,12 @@ function App() {
   })
 
 
-
+  const [darkMode, setDarkMode] = useState(false)
   
   return (
     <div className="App">
-      <NavBar />
-      <Home />
+      <NavBar darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Home darkMode={darkMode}/>
     </div>
   );
 }

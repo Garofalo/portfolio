@@ -1,16 +1,22 @@
+
 import './Home.css'
 import Footer from '../../components/Footer/Footer';
 import Projects from '../../components/Projects/Projects';
 import logo from '../../utils/rest.png'
+import '../../components/Parallax/Parallax.css'
 
-export default function Home(){
-
+export default function Home({darkMode}){
+    const isDark = darkMode ? "dark-content" : "light-content"
     return (
     <div className='column-div'>
-        
+        <div className={`parallax forest `} id="home">
+            <div className={`parallax-title ${isDark}`}>
+                <span>Ron Garofalo</span>
+            </div>
+        </div>
 
         <div className="about container-home" id="about">
-            <h1 style={{borderBottom: '2px solid black',  width: '92vw', margin:'5vh auto 0 auto'}}>Ron Garofalo</h1>
+            <h1 style={{padding: '0px', borderBottom: '2px solid black',  width: '92vw', margin:'0 auto 0 auto'}}>Regarding Yours Truly</h1>
             <h2 style={{width:"80vw", margin: "2% auto 0 auto"}}>  I take great pride in my ability to creatively 
                 and efficiently solve problems. Full Stack Software
                 Engineering allows me to fulfill my need to be creative 
@@ -28,11 +34,11 @@ export default function Home(){
                 <span className='italics'> clicks</span> into place is my daily white whale. </h2>
 
         </div>
-
-        <Projects />
-
-
-
+        <div className={`parallax racoon`} >
+            <div className={`parallax-title ${isDark}`} >
+                <h1>Ron Garofalo</h1>
+            </div>    
+        </div>
         <div className="skills container-home" id="skills">
             <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', width: '92vw'}}>Developer Toolbox</h1>
 
@@ -72,7 +78,12 @@ export default function Home(){
             <div className="skill-holder">
                 <img alt="material ui logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
             </div>
-        </div>
+        </div>            
+        <Projects />
+
+
+
+
 
 
         
