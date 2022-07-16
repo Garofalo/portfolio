@@ -9,8 +9,8 @@ import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 export default function NavBar({darkMode, setDarkMode}){
    
-    const variant = darkMode ? "dark" : "light"
-    const navDark = darkMode ? "dark-bg" : "light-bg"
+    const variant = darkMode ? "light" : "dark"
+    const navDark = darkMode ? "light-bg" : "dark-bg"
     
     return(
     <header>

@@ -8,7 +8,7 @@ import stack from '../../utils/stackover.png'
 import '../../components/Parallax/Parallax.css'
 
 export default function Home({darkMode}){
-    const isDark = darkMode ? "dark-content" : "light-content"
+    const isDark = darkMode ? "light-content" : "dark-content"
     return (
     <div className='column-div'>
         <div className={`parallax forest `} id="home">
