@@ -36,11 +36,10 @@ export default function Home({darkMode}){
         </div>
         <div className={`parallax racoon`} >
             <div className={`parallax-title ${isDark}`} >
-                <h1>Ron Garofalo</h1>
+                <span>Developer Toolbox</span>
             </div>    
         </div>
         <div className="skills container-home" id="skills">
-            <h1 style={{borderBottom: '2px solid black', marginTop: '5vh', width: '92vw'}}>Developer Toolbox</h1>
 
             <div className="skill-holder">
                 <img alt="js logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -86,7 +85,11 @@ export default function Home({darkMode}){
 
 
 
-        
+        <div className={`parallax pitt`} >
+            <div className={`parallax-title ${isDark}`} >
+                <span>Contact</span>
+            </div>    
+        </div>
     <Footer />
 </div>)
 }

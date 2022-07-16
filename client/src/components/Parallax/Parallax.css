@@ -1,5 +1,5 @@
 .parallax{
-
+    position: relative;
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -14,7 +14,10 @@
     background-image: url('../../utils/racoon.jpg');
     height: 40vh
 }
-
+.pitt{
+    background-image: url('../../utils/pitt.jpg');
+    height: 30vh
+}
 .parallax-title{
     position:absolute;
     top:50%;

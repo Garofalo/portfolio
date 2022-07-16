@@ -1,6 +1,8 @@
 import './Footer.css'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import resume from '../../utils/RonGarofalo.pdf'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -8,22 +10,34 @@ export default function Footer(){
 
     return (
     <footer id="contact">
-            <h1 style={{
-            borderBottom: '2px solid black',
-             marginTop: '5vh', 
-             width: '92vw'}}>Contact</h1>
-            <div className='contact-info'>
+
+
                 <div className='a-contact'>
-                    <a rel="noreferrer" href='https://github.com/Garofalo?tab=repositories' target='_blank'>Public GitHub Repositories</a>
+                
+                    <a rel="noreferrer" 
+                    href='https://github.com/Garofalo?tab=repositories' 
+                    target='_blank'
+                    >
+                        <FontAwesomeIcon className="foot-icon"  icon={faGithub} />
+                    </a>
                 </div>
                 <div className='a-contact'>
-                    <a rel="noreferrer" href='https://www.linkedin.com/in/ron-garo/' target='_blank'>Message me on Linked In</a>
+                    <a rel="noreferrer" 
+                    href='https://www.linkedin.com/in/ron-garo/' 
+                    target='_blank'>
+                    <FontAwesomeIcon className="foot-icon"  icon={faLinkedin} />
+                    </a>
                 </div>
                 <div className='a-contact'>
-                        <a href={resume} download="RonGarofaloResume.pdf">Download my resume</a>             
+                        <a href={resume} 
+                        download="RonGarofaloResume.pdf">
+
+                            <FontAwesomeIcon id="download"className="foot-icon"  icon={faDownload} />
+
+                        </a>             
                 </div>
 
-            </div>
+
             
     </footer>
     )

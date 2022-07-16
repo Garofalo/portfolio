@@ -4,6 +4,7 @@ import { faUser, faToolbox,faDiagramProject, faMessage, faLightbulb, faHome,  } 
 import '../../App.css'
 import { Nav, Navbar, Container } from "react-bootstrap"
 import './Nav.css'
+import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 
 export default function NavBar({darkMode, setDarkMode}){
@@ -13,21 +14,10 @@ export default function NavBar({darkMode, setDarkMode}){
     
     return(
     <header>
+ 
+        <Navbar collapseOnSelect expand='sm' className={`fixed-top ${navDark}`} variant={variant}>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 
-        <Navbar className={`fixed-top ${navDark}`} variant={variant}>
-            <Nav>
-                <FontAwesomeIcon className="nav-icon" icon={faHome} />
-                <Nav.Link href="#home">Home</Nav.Link>
-                <FontAwesomeIcon className="nav-icon" icon={faUser} />
-                <Nav.Link href="#about">About</Nav.Link>
-                <FontAwesomeIcon className="nav-icon" icon={faToolbox}/>
-                <Nav.Link href="#skills">Toolbox</Nav.Link>
-                <FontAwesomeIcon className="nav-icon" icon={faDiagramProject}/>             
-                <Nav.Link href="#projects">Projects</Nav.Link>
-                <FontAwesomeIcon className="nav-icon" icon={faMessage}/>                
-                <Nav.Link href="#contact">Contact</Nav.Link>
-                  
-                <Container id='button-container'>
                     <ThemeContext.Consumer>
                     {
                         ({changeTheme})=>(
@@ -42,8 +32,23 @@ export default function NavBar({darkMode, setDarkMode}){
                         )
                     }
                     </ThemeContext.Consumer>
-                </Container>            
+
+            <Navbar.Collapse>
+            <Nav>
+                <FontAwesomeIcon className="nav-icon" icon={faHome} />
+                <Nav.Link href="#home">Home</Nav.Link>
+                <FontAwesomeIcon className="nav-icon" icon={faUser} />
+                <Nav.Link href="#about">About</Nav.Link>
+                <FontAwesomeIcon className="nav-icon" icon={faToolbox}/>
+                <Nav.Link href="#skills">Toolbox</Nav.Link>
+                <FontAwesomeIcon className="nav-icon" icon={faDiagramProject}/>             
+                <Nav.Link href="#projects">Projects</Nav.Link>
+                <FontAwesomeIcon className="nav-icon" icon={faMessage}/>                
+                <Nav.Link href="#contact">Contact</Nav.Link>
+                  
+          
             </Nav>
+            </Navbar.Collapse>
 
 
         </Navbar>
