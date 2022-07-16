@@ -4,7 +4,6 @@ import Footer from '../../components/Footer/Footer';
 import Projects from '../../components/Projects/Projects';
 import logo from '../../utils/rest.png'
 import netlify from '../../utils/netlify.png'
-import stack from '../../utils/logo-stackoverflow.png'
 import '../../components/Parallax/Parallax.css'
 
 export default function Home({darkMode}){
@@ -78,11 +77,7 @@ export default function Home({darkMode}){
                 <h4>200+ Hours</h4>
                 <h4>Every Project</h4>
             </div>
-            <div className="skill-holder">
-                <img alt="stack overflow logo" src={stack} />
-                <h4>200+ Hours</h4>
-                <h4>Every Project</h4>
-            </div>
+
             <div className="skill-holder">
                 <img alt='github logo' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
                 <h4>100+ Hours</h4>
