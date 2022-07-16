@@ -12,7 +12,12 @@ export default function Projects(){
 
     return(
         <div id="projects">
-        <h1  style={{borderBottom: '2px solid black', width: '93vw', margin: '0 auto'}}>Projects</h1>
+        <h1  style={{
+            borderBottom: '2px solid black', 
+            width: '93vw', 
+            margin: '0 auto'}}>
+                Public Projects
+        </h1>
 
         <div className="projects container-home">
             <div className='proj-card-holder'>

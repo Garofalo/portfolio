@@ -1,16 +1,17 @@
 .skill-holder>img{
-    height: 8vh;
+    height: 5vh;
 }
 .skill-holder{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.5%;
+    flex-direction: column;
+    margin: 3%;
 }
 
 .skills{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     justify-content: space-evenly;
     margin-bottom: 5vh;
 }
@@ -35,13 +36,7 @@
     flex-direction: column;
 }
 
-.show-more{
-    background: none;
-    border: none;
-    padding: 0px;
-    cursor: pointer;
-    margin-top: 3%;
-}
+
 .icon-holder{
     width: 10vw;
 }
@@ -56,7 +51,12 @@
 }
 
 @media (min-width: 750px){
-    .skill-holder>img{
-        height: 20vh;
+    .skill-holder>img {
+        height: 15vh;
+        margin-bottom: 5%;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
     }
 }

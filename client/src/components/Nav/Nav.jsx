@@ -40,7 +40,7 @@ export default function NavBar({darkMode, setDarkMode}){
                 <FontAwesomeIcon className="nav-icon" icon={faUser} />
                 <Nav.Link href="#about">About</Nav.Link>
                 <FontAwesomeIcon className="nav-icon" icon={faToolbox}/>
-                <Nav.Link href="#skills">Toolbox</Nav.Link>
+                <Nav.Link href="#racoon">Toolbox</Nav.Link>
                 <FontAwesomeIcon className="nav-icon" icon={faDiagramProject}/>             
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <FontAwesomeIcon className="nav-icon" icon={faMessage}/>                
