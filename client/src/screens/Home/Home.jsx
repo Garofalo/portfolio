@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'
 import Footer from '../../components/Footer/Footer';
 import Projects from '../../components/Projects/Projects';
@@ -6,9 +6,18 @@ import logo from '../../utils/rest.png'
 import netlify from '../../utils/netlify.png'
 import stack from '../../utils/stackover.png'
 import '../../components/Parallax/Parallax.css'
+import AboutDrop from '../../components/AboutDrop/AboutDrop';
+import { aboutList } from '../../components/AboutDrop/about';
+
+
 
 export default function Home({darkMode}){
     const isDark = darkMode ? "light-content" : "dark-content"
+
+    const aboutDropDowns = aboutList.map((about)=>(
+        <AboutDrop info={about.info} title={about.title}/>
+    ))
+
     return (
     <div className='column-div'>
         <div className={`parallax forest `} id="home">
@@ -36,7 +45,9 @@ export default function Home({darkMode}){
                 <span className='italics'> clicks</span> into place is my daily white whale. </h2>
 
         </div>
-        <Projects />
+        <div id='test'>{aboutDropDowns}</div>
+        
+        <Projects isDark={isDark}/>
         <div className={`parallax racoon`} >
             <div id='racoon' className={`parallax-title ${isDark}`} >
                 <span>Developer Toolbox</span>
@@ -66,12 +77,12 @@ export default function Home({darkMode}){
             <div className="skill-holder ">
                 <img alt="html logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
                 <h4>200+ Hours</h4>
-                <h4>Every Project</h4>
+                <h4>20+ Project</h4>
             </div>
             <div className="skill-holder">
                 <img alt="css logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
                 <h4>200+ Hours</h4>
-                <h4>Every Project</h4>
+                <h4>20+ Project</h4>
             </div>
             <div className="skill-holder">
                 <img alt='google logo' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />

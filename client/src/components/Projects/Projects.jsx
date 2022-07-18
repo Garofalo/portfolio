@@ -3,21 +3,19 @@ import randq from '../../utils/randproj.svg'
 import restLogo from '../../utils/save.jpg'
 import yourCraft from '../../utils/yourcraft.svg'
 import  Card  from 'react-bootstrap/Card'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../screens/Home/Home.css'
 import logo from '../../utils/ronproj.svg'
 import './Projects.css'
 
-export default function Projects(){
+export default function Projects({isDark}){
 
     return(
         <div id="projects">
-        <h1  style={{
-            borderBottom: '2px solid black', 
-            width: '93vw', 
-            margin: '0 auto'}}>
-                Public Projects
-        </h1>
+        <div className={`parallax bulb`} >
+            <div className={`parallax-title ${isDark}`}>
+                <span>Public Projects</span>
+            </div>
+        </div>
 
         <div className="projects container-home">
             <div className='proj-card-holder'>

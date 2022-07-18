@@ -1,18 +1,16 @@
-
+#nav{
+    box-shadow: 0 1px 9px -1px black;
+}
 .light-bg{
     background: white;
-
 }
 .dark-bg{
     background: #282c34;
-
-
 }
 header{
     display: flex;
     flex-direction: row;
-    
-}
+    }
 
 .nav-icon{
     margin-top: 3%;

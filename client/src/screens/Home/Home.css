@@ -8,7 +8,16 @@
     flex-direction: column;
     margin: 3%;
 }
-
+.about-title-holder{
+    display: flex;
+    align-items: center;
+}
+.about-title-holder>h1{
+    margin-left: 4%;
+}
+.about-title-holder>.arrow{
+    margin-left: 2%;
+}
 .skills{
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -21,7 +30,8 @@
 }
 
 .container-home{
-    padding-top: 5%;
+    padding-top: 1%;
+    border-bottom: 1px solid black;
 }
 .about{
     display: flex;

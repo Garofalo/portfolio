@@ -18,6 +18,10 @@
     background-image: url('../../utils/pitt.jpg');
     height: 30vh
 }
+.bulb{
+    background-image: url('../../utils/bulb.jpg');
+    height:40vh
+}
 .parallax-title{
     position:absolute;
     top:50%;

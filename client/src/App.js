@@ -2,6 +2,8 @@ import Home from "./screens/Home/Home";
 import NavBar from "./components/Nav/Nav";
 import { useEffect, useState } from "react";
 import ReactGA from "react-ga"
+
+
 function App() {
    
   useEffect(()=>{

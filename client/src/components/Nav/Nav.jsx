@@ -2,9 +2,9 @@ import { ThemeContext, themes } from "../../context/ThemeContext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faToolbox,faDiagramProject, faMessage, faLightbulb, faHome,  } from "@fortawesome/free-solid-svg-icons";
 import '../../App.css'
-import { Nav, Navbar, Container } from "react-bootstrap"
+import { Nav, Navbar } from "react-bootstrap"
 import './Nav.css'
-import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+
 
 
 export default function NavBar({darkMode, setDarkMode}){
@@ -13,9 +13,9 @@ export default function NavBar({darkMode, setDarkMode}){
     const navDark = darkMode ? "light-bg" : "dark-bg"
     
     return(
-    <header>
+    <header >
  
-        <Navbar collapseOnSelect expand='sm' className={`fixed-top ${navDark}`} variant={variant}>
+        <Navbar id='nav' collapseOnSelect expand='sm' className={`fixed-top ${navDark}`} variant={variant}>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 
                     <ThemeContext.Consumer>
@@ -25,7 +25,7 @@ export default function NavBar({darkMode, setDarkMode}){
                             <Nav.Link onClick={()=>{
                                 setDarkMode(!darkMode);
                                 changeTheme(
-                                    darkMode ? themes.light : themes.dark)
+                                    darkMode ? themes.dark : themes.light)
                             }}>
                                 <FontAwesomeIcon className="nav-icon" icon={faLightbulb}/>
                             </Nav.Link>
