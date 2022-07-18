@@ -24,6 +24,9 @@
     justify-content: space-evenly;
     margin-bottom: 5vh;
 }
+.black-font{
+    color: black !important;
+}
 #about{
     display: flex;
     flex-direction: column;

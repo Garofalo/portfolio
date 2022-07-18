@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'
 import Footer from '../../components/Footer/Footer';
-import Projects from '../../components/Projects/Projects';
 import logo from '../../utils/rest.png'
 import netlify from '../../utils/netlify.png'
 import stack from '../../utils/stackover.png'
 import '../../components/Parallax/Parallax.css'
 import AboutDrop from '../../components/AboutDrop/AboutDrop';
 import { aboutList } from '../../components/AboutDrop/about';
-
+import ProjectModal from '../../components/ProjectModal/ProjectModal';
+import { projectList, imgList } from '../../components/ProjectModal/projects';
 
 
 export default function Home({darkMode}){
@@ -16,6 +16,17 @@ export default function Home({darkMode}){
 
     const aboutDropDowns = aboutList.map((about)=>(
         <AboutDrop info={about.info} title={about.title}/>
+    ))
+    
+    const projects = projectList.map((project, index)=>(
+        <ProjectModal
+        title={project.title}
+        image={imgList[index]}
+        description={project.description}
+        deployed={project.deployed}
+        links={project.links}
+        secondRepo={project.secondRepo}
+        />
     ))
 
     return (
@@ -45,9 +56,13 @@ export default function Home({darkMode}){
                 <span className='italics'> clicks</span> into place is my daily white whale. </h2>
 
         </div>
-        <div id='test'>{aboutDropDowns}</div>
-        
-        <Projects isDark={isDark}/>
+        {aboutDropDowns}
+        <div className={`parallax bulb`} >
+            <div id='racoon' className={`parallax-title ${isDark}`} >
+                <span>Public Projects</span>
+            </div>    
+        </div>
+        {projects}
         <div className={`parallax racoon`} >
             <div id='racoon' className={`parallax-title ${isDark}`} >
                 <span>Developer Toolbox</span>
