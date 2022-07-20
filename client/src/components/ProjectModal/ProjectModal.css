@@ -1,3 +1,16 @@
-.proj-body>img{
-    width: 30vw;
+.project-modal{
+    box-shadow: 0 1px 9px -1px black;
+}
+.projects-holder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.projects-holder>*{
+    margin: 5%
+}
+
+@media (min-width: 750px){
+    .projects-holder{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

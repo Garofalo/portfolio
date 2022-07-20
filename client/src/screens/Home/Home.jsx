@@ -62,7 +62,7 @@ export default function Home({darkMode}){
                 <span>Public Projects</span>
             </div>    
         </div>
-        {projects}
+        <div className='projects-holder'>{projects}</div>
         <div className={`parallax racoon`} >
             <div id='racoon' className={`parallax-title ${isDark}`} >
                 <span>Developer Toolbox</span>

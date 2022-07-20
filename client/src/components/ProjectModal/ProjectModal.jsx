@@ -1,5 +1,6 @@
 import { useState } from "react"
 import {  Modal, Image } from "react-bootstrap";
+import "./ProjectModal.css"
 
 export default function ProjectModal({
     deployed, 
@@ -12,7 +13,7 @@ export default function ProjectModal({
     const [showMore, setShowMore] = useState(false)
     
     return(
-        <div className={`project-modal`}>
+        <div className="project-modal">
             {image && <>
             <Image
             fluid 
@@ -62,7 +63,7 @@ export default function ProjectModal({
                                 target="_blank">Deployed Site</a>
                         }
 
-                        {   links[0] != "private" &&
+                        {   links[0] !== "private" &&
                             <a rel="noreferrer" 
                         href={links[0]} 
                         target="_blank">GitHub Repo</a>}
