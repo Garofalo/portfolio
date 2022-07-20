@@ -11,12 +11,12 @@
 .about-title-holder{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.about-title-holder>h1{
-    margin-left: 4%;
-}
-.about-title-holder>.arrow{
-    margin-left: 2%;
+
+.about-title-holder>.arrow, .about-title-holder>h1{
+    margin: 0% 2% 3% 0;
+
 }
 .skills{
     display: grid;
@@ -30,16 +30,9 @@
 #about{
     display: flex;
     flex-direction: column;
-}
-
-.container-home{
-    padding-top: 1%;
-    border-bottom: 1px solid black;
-}
-.about{
-    display: flex;
     justify-content: center;
 }
+
 .white-bg{
     background: white;
 }

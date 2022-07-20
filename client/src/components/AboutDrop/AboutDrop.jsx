@@ -6,16 +6,16 @@ export default function AboutDrop({title, info}){
 
     const [showMore, setShowMore] = useState(true)
 
-    return(
+    return( 
         <div>
             { showMore ? 
-            <div className="about-title-holder">
-                <FontAwesomeIcon className='arrow' size='lg' onClick={()=>setShowMore(false)}icon={faAngleDown}/>
+            <div onClick={()=>setShowMore(false)} className="about-title-holder">
+                <FontAwesomeIcon className='arrow' size='lg'  icon={faAngleDown}/>
                 <h1>{title}</h1>
             </div>                :
-            <div className="show-more">
+            <div  onClick={()=>setShowMore(true)} className="show-more">
                 <div className="about-title-holder">
-                    <FontAwesomeIcon className='arrow' onClick={()=>setShowMore(true)} icon={faAngleUp}/>
+                    <FontAwesomeIcon className='arrow'icon={faAngleUp}/>
                     <h1>{title}</h1>
                 </div>
                 <h4>{info}</h4>

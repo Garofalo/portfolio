@@ -5,8 +5,7 @@ import logo from '../../utils/rest.png'
 import netlify from '../../utils/netlify.png'
 import stack from '../../utils/stackover.png'
 import '../../components/Parallax/Parallax.css'
-import AboutDrop from '../../components/AboutDrop/AboutDrop';
-import { aboutList } from '../../components/AboutDrop/about';
+import About from '../../components/About/About';
 import ProjectModal from '../../components/ProjectModal/ProjectModal';
 import { projectList, imgList } from '../../components/ProjectModal/projects';
 
@@ -14,10 +13,7 @@ import { projectList, imgList } from '../../components/ProjectModal/projects';
 export default function Home({darkMode}){
     const isDark = darkMode ? "light-content" : "dark-content"
 
-    const aboutDropDowns = aboutList.map((about)=>(
-        <AboutDrop info={about.info} title={about.title}/>
-    ))
-    
+
     const projects = projectList.map((project, index)=>(
         <ProjectModal
         title={project.title}
@@ -36,35 +32,16 @@ export default function Home({darkMode}){
                 <span>Ron Garofalo</span>
             </div>
         </div>
+        <About />
 
-        <div className="about container-home" id="about">
-            <h1 style={{padding: '0px', borderBottom: '2px solid black',  width: '92vw', margin:'0 auto 0 auto'}}>Regarding Yours Truly</h1>
-            <h2 style={{width:"80vw", margin: "2% auto 0 auto"}}>  I take great pride in my ability to creatively 
-                and efficiently solve problems. Full Stack Software
-                Engineering allows me to fulfill my need to be creative 
-                <span className="bold"> and </span>scratch my problem 
-                solving itch while my professional skillset gets sharper.</h2>
-                <br/>
-                <h2 style={{width:"80vw", margin: "2% auto 0 auto"}}>Truly a lifelong learner, my approach to learning a skill 
-                has led me to teach peers in a wide variety of topics - 
-                from Tang Soo Do as a teenager (a Korean martial art), 
-                to sales in my 20s, to professionally tasting (read: 
-                drinking) beer in my late 20s and early 30s. I have that 
-                same desire to learn and hone the skill of Software                     
-                Development, so I spend my days coding. That feeling of                     
-                finally figuring out a problem and everything just 
-                <span className='italics'> clicks</span> into place is my daily white whale. </h2>
-
-        </div>
-        {aboutDropDowns}
         <div className={`parallax bulb`} >
-            <div id='racoon' className={`parallax-title ${isDark}`} >
+            <div id='bulb' className={`parallax-title ${isDark}`} >
                 <span>Public Projects</span>
             </div>    
         </div>
         <div className='projects-holder'>{projects}</div>
         <div className={`parallax racoon`} >
-            <div id='racoon' className={`parallax-title ${isDark}`} >
+            <div id='raccoon' className={`parallax-title ${isDark}`} >
                 <span>Developer Toolbox</span>
             </div>    
         </div>

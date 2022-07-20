@@ -33,11 +33,22 @@ export default function ProjectModal({
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="proj-body">
+                {   links[1] ? 
+                <a 
+                    rel='noreferrer'
+                    target="_blank"
+                    href={links[1]}>
                 <Image
                 fluid 
                 alt={`${title}`}
                 src={require(`../../utils/${image}`)} 
-                />
+                /></a>
+                :
+                <Image
+                fluid 
+                alt={`${title}`}
+                src={require(`../../utils/${image}`)} 
+                /> }
                     <h4>{description}</h4>
                     <h4>{`Deployed: ${deployed}`}</h4>
                 </Modal.Body>
