@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import resume from '../../utils/RonGarofalo.pdf'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import Contact from '../Contact/Contact';
 
 
 export default function Footer(){
@@ -36,6 +36,8 @@ export default function Footer(){
 
                         </a>             
                 </div>
+                <Contact />
+
 
 
             

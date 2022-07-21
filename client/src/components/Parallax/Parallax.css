@@ -32,3 +32,8 @@
     font-size: 3em;
 
 }
+@media (max-width: 750px) {
+    .parallax-title{
+        width: 60vw;
+    }
+}
