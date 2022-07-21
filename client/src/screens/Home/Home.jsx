@@ -35,13 +35,13 @@ export default function Home({darkMode}){
         <About />
 
         <div className={`parallax bulb`} >
-            <div id='bulb' className={`parallax-title ${isDark}`} >
+            <div id='projects' className={`parallax-title ${isDark}`} >
                 <span>Public Projects</span>
             </div>    
         </div>
         <div className='projects-holder'>{projects}</div>
         <div className={`parallax racoon`} >
-            <div id='raccoon' className={`parallax-title ${isDark}`} >
+            <div id='tools' className={`parallax-title ${isDark}`} >
                 <span>Developer Toolbox</span>
             </div>    
         </div>

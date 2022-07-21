@@ -8,16 +8,7 @@
     flex-direction: column;
     margin: 3%;
 }
-.about-title-holder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.about-title-holder>.arrow, .about-title-holder>h1{
-    margin: 0% 2% 3% 0;
-
-}
 .skills{
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -27,11 +18,7 @@
 .black-font{
     color: black !important;
 }
-#about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .white-bg{
     background: white;

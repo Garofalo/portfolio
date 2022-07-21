@@ -5,6 +5,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.project-modal:hover{
+    cursor: pointer;
+}
 .projects-holder>*{
     margin: 5%
 }

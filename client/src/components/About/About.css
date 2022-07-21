@@ -1,0 +1,32 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-middle{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+.about-drop{
+    margin: 1% 2%;
+}
+.about-drop:hover{
+    cursor: pointer;
+}
+.about-title-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.show-more>h4{
+    padding: 0 2% 1% 2%;
+}
+
+.about-title-holder>.arrow, .about-title-holder>h1{
+    margin: 0% 2% 3% 0;
+}
