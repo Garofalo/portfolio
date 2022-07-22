@@ -1,15 +1,15 @@
 export const projectList = [
     {
-        title: "My Wedding Website",
+        title: "Our Wedding Website",
         language: ["React", "JavaScript"],
-        description: "Test",
+        description: "A self-deployed responsive front end React Application built with non-technical users in mind.  Built to be mobile first with a custom made carousel and a navbar that changes titles based on where the user has scrolled. Allows users to RSVP and Email us with EmailJS.",
         deployed: "Yes",
         links : ["private", "https://emron.netlify.app"]
     },
     {
         title: "Mamoo",
         language: ["React", "Python", "JavaScript", "PostgreSQL"],
-        description: "A Full Stack Application that allows authenticated users to mark important events in their lives and quantify time passed.",
+        description: " A self-deployed responsive full stack application built to allow authenticated users to mark important events in their lives and quantify time passed. Full CRUD operations.",
         deployed: "Yes",
         links : ["https://github.com/Garofalo/mamoo","https://yourmamoo.netlify.app/"],
         secondRepo: "https://github.com/Garofalo/mamoobackend"
@@ -24,7 +24,7 @@ export const projectList = [
     {
         title: "YourCraft",
         language: ["React", "JavaScript", "Express"],
-        description: "A full stack inventory application built with a team that allows all users to see what craft brewers have in stock, and allows authenticated users to create, update and delete beverages.",
+        description: " A full stack responsive inventory application built with a team that allows all users to see what craft brewers have in stock, and allows authenticated users to create, update and delete beverages. ",
         deployed: "Yes",
         links : ["https://github.com/kimcapgab/your-craft","https://your-craft.netlify.app/",]
     },
@@ -38,7 +38,7 @@ export const projectList = [
     {
         title: "This Site",
         language: ["React", "JavaScript"],
-        description: "Something that (hopefully) showcases my proficiencies",
+        description: "A self-deployed  front end React Application built to showcase projects and technical skills. Features a custom Parallax design with responsive grid layout. Allows users contact via email and view GitHub repositories.",
         deployed: "Yes",
         links : ["https://github.com/Garofalo/portfolio"]
     },

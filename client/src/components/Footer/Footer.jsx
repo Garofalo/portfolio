@@ -1,6 +1,6 @@
 import './Footer.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import resume from '../../utils/RonGarofalo.pdf'
+import resume from '../../utils/RonGarofaloResume.pdf'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Contact from '../Contact/Contact';

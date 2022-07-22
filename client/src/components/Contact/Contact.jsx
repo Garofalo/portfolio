@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Form } from 'react-bootstrap';
 
 
 export default function Contact(){
@@ -67,39 +67,51 @@ export default function Contact(){
                 >
                 <Modal.Header closeButton>
                     <Modal.Title>
-                       Send Me an Email!
+                       Howdy! Say hi!
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <form onSubmit={sendEmail}>
-                        <input required 
+                <Form onSubmit={sendEmail}>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control 
                             type="text" 
-                            name="from"
+                            placeholder="Enter Name (required)"
                             value={form.from}
-                            onChange={handleChange}/>
-                        <label>*Name</label>
-                        <input required 
+                            onChange={handleChange} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Company</Form.Label>
+                        <Form.Control 
                             type="text" 
-                            name="company"
+                            placeholder="Enter Company"
                             value={form.company}
-                            onChange={handleChange}/>
-                        <label>*Company</label>
-                        <input required 
-                            type="text" 
-                            name="email"
+                            onChange={handleChange} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control 
+                            type="email" 
+                            placeholder="Enter Email (required)"
                             value={form.email}
-                            onChange={handleChange}/>
-                        <label>*Email</label>
-                        <textarea required
-                            rows='4' 
-                            type="text" 
-                            name="message"
+                            onChange={handleChange} />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control
+                            rows={4}
+                            as="textarea" 
+                            placeholder="Enter Message"
                             value={form.message}
-                            onChange={handleChange}/>
-                        <label>*Message</label>
-                        <Button variant='contained' 
-                            type="submit">Submit</Button>
-                    </form>
+                            onChange={handleChange} />
+                    </Form.Group>
+
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
+                </Form>
+
                 </Modal.Body>
             </Modal>
             

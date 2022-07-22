@@ -5,7 +5,7 @@
 }
 #about>h5{
     text-align: justify;
-    text-indent: 2em;
+
 }
 .about-middle{
     display: flex;
@@ -29,7 +29,6 @@
 .show-more>h4{
     padding: 0 2% 1% 2%;
     text-align: justify;
-    text-indent: 2em;
 }
 
 .about-title-holder>.arrow, .about-title-holder>h1{
