@@ -3,7 +3,10 @@
     flex-direction: column;
     justify-content: center;
 }
-
+#about>h5{
+    text-align: justify;
+    text-indent: 2em;
+}
 .about-middle{
     display: flex;
     justify-content: space-evenly;
@@ -25,6 +28,8 @@
 }
 .show-more>h4{
     padding: 0 2% 1% 2%;
+    text-align: justify;
+    text-indent: 2em;
 }
 
 .about-title-holder>.arrow, .about-title-holder>h1{
