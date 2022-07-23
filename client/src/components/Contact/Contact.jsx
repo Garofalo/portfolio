@@ -78,6 +78,7 @@ export default function Contact(){
                             type="text" 
                             placeholder="Enter Name (required)"
                             value={form.from}
+                            name="from"
                             onChange={handleChange} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -86,6 +87,7 @@ export default function Contact(){
                             type="text" 
                             placeholder="Enter Company"
                             value={form.company}
+                            name="company"
                             onChange={handleChange} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -94,6 +96,7 @@ export default function Contact(){
                             type="email" 
                             placeholder="Enter Email (required)"
                             value={form.email}
+                            name="email"
                             onChange={handleChange} />
                     </Form.Group>
 
@@ -102,6 +105,7 @@ export default function Contact(){
                         <Form.Control
                             rows={4}
                             as="textarea" 
+                            name="message"
                             placeholder="Enter Message"
                             value={form.message}
                             onChange={handleChange} />
